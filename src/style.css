@@ -1,0 +1,142 @@
+/* Stili Base */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #525252;
+}
+
+#background1 {
+  background-color: #00a884;
+  width: 100%;
+  height: 40%;
+}
+
+#background2 {
+  background-color: #f0f2f5;
+  width: 100%;
+  height: 70%;
+}
+#root {
+  width: 86%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  background-color: #efeae2;
+}
+
+/* Stili per gli Input */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  background-color: white;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Stili per il Bottone */
+#btn-signin {
+  background-color: #07d365;
+  color: white;
+  border: none;
+  padding: 10px 40px 10px 20px;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #05ba57;
+}
+
+/* Stili per il Bottone di Logout */
+#btn-logout {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+}
+
+/* Stili per la Lista dei Messaggi */
+#message-list {
+  height: 65%;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+/* Stili per Input di Messaggio e Bottone di Invio */
+#inputMessage {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  width: calc(100% - 120px); /* Adegua la larghezza */
+}
+
+.message {
+  background-color: #07d365;
+  padding: 6px 8px;
+  margin: 5px 0px 5px 390px;
+  border-radius: 4px;
+}
+
+#btn-send {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-right: 0px;
+}
+
+/* Assicurati di avvolgere l'input e il bottone di invio in un div per un layout orizzontale */
+#send-message-container {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  margin-top: 109px;
+  background-color: #f0f2f5;
+  align-items: center;
+}
+
+#backgroundLogout {
+  background-color: #f0f2f5;
+  width: 100%;
+  height: 12%;
+  margin-top: 0px;
+}

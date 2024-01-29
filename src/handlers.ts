@@ -64,5 +64,9 @@ export function handlerOnClickSend() {
       <span>${email}</span>
     </div> `;
 
+  const pElements = document.querySelectorAll('p');
+  pElements.forEach(pElement => {
+    if (pElement) pElement.classList.add('MessageUser');
+  });
   nodeInput.value = '';
 }
